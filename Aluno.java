@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Biblioteca;
+package Biblioteca.model;
 
 /**
  *
@@ -13,6 +13,10 @@ public class Aluno extends Usuario{
     
     private double numeroMatricula;
 
+    public Aluno (){
+        
+    }
+    
      public Aluno (String nome, double num){
         setNome(nome);
         setNumeroMatricula(num);
@@ -26,7 +30,5 @@ public class Aluno extends Usuario{
         this.numeroMatricula = numeroMatricula;
     }
     
-   
-    
-    
+           
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Biblioteca;
+package Biblioteca.model;
 
 /**
  *
@@ -14,13 +14,20 @@ public class Livro extends Obra {
     private String nomeAutor;
     private double numeroEdicao;
     private int anoPublicacao;
+
+    public Livro() {
+        
+    }
     
-    Livro(String nome, String nomeAutor, double numero, int ano) {
+    
+    public Livro(String nome, String nomeAutor, double numero, int ano) {
         setNome(nome);
         setNomeAutor(nomeAutor);
         setNumeroEdicao(numero);
         setAnoPublicacao(ano);
     }
+
+ 
     
     public String getNomeAutor() {
         return nomeAutor;

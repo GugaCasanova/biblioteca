@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Biblioteca;
+package Biblioteca.model;
 
 /**
  *
@@ -12,7 +12,6 @@ package Biblioteca;
 public class Obra {
     
     private String nome;
-    
     private boolean emprestado;
     
     public String getNome() {
@@ -23,12 +22,16 @@ public class Obra {
         this.nome = nome;
     }
 
-    public boolean isEmprestado() {
+    public boolean getEmprestado() {
         return emprestado;
     }
 
     public void setEmprestado(boolean emprestado) {
         this.emprestado = emprestado;
+    }
+
+    public void parseInt(String text) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

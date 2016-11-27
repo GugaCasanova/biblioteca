@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Biblioteca;
+package Biblioteca.model;
+
+import java.util.Date;
 
 /**
  *
@@ -11,18 +13,22 @@ package Biblioteca;
  */
 public class Professor extends Usuario {
 
-    private double dataAdmissao;
+    private Date dataAdmissao;
 
-    public Professor(String nome, double data) {
+    public Professor(){
+        
+    }
+    
+    public Professor(String nome, Date data) {
         setNome(nome);
         setDataAdmissao(data);
     }
 
-    public double getDataAdmissao() {
+    public Date getDataAdmissao() {
         return dataAdmissao;
     }
 
-    public void setDataAdmissao(double dataAdmissao) {
+    public void setDataAdmissao(Date dataAdmissao) {
         this.dataAdmissao = dataAdmissao;
     }
 
